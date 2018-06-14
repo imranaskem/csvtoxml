@@ -28,9 +28,9 @@ type xhtml struct {
 }
 
 func main() {
-	// filename := os.Args[1]
+	filename := os.Args[1]
 
-	file, err := os.Open("hreflangmatchedURLs.csv")
+	file, err := os.Open(filename)
 
 	if err != nil {
 		fmt.Printf(err.Error())
